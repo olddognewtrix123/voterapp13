@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>This is the page where users can create a new poll.</title>
+		
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<header>
+		<p>Create a new poll, <span id="display-name"></span>!</p>
+		<a class="menu" href="/profile">Profile</a>
+		<p>|</p>
+		<a class="menu" href="/logout">Logout</a>
+	</header>
+
+	<body>
+		<div class="container">
+		<!--	<img src="/public/img/clementine_150.png" /> -->
+			<br />
+			<p class="clementine-text">New Poll</p>
+		</div>
+	
+		<div class="container">
+			<br />
+			<div class="btn-container">
+				<button type="submit" class="btn btn-add">New Option</button>
+				<button class="btn btn-delete">Finish and Create</button>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="common/ajax-functions.js"></script>
+		<script type="text/javascript" src="controllers/clickController.client.js"></script>
+		<script type="text/javascript" src="controllers/userController.client.js"></script>
+	</body>
+
+</html>
