@@ -53,19 +53,19 @@ console.log('hello');
         });
         
 // saves new poll to the database (Finish and Create button)
-createPoll.addEventListener('click', function(){ 
+//createPoll.addEventListener('click', function(){ 
     
-   const appUser = require("./models.appUser");
-   console.log('so far so good!');
-            var newpoll = new appUser({
-               userName: 'frank',
-               password: '1234'
-            });
-            // Mongoose method to save to the db using the appUser schema
-            newpoll.save(function (err) {
-  if (err) console.log("Got error saving to db");
+ //  const appUser = require("./models.appUser");
+ //  console.log('so far so good!');
+//            var newpoll = new appUser({
+//               userName: 'frank',
+//               password: '1234'
+//            });
+//            // Mongoose method to save to the db using the appUser schema
+ //           newpoll.save(function (err) {
+ // if (err) console.log("Got error saving to db");
   // saved!
-});
+//});
         });
 
 
