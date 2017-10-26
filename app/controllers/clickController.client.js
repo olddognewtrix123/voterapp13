@@ -66,7 +66,7 @@ console.log('hello');
  // if (err) console.log("Got error saving to db");
   // saved!
 //});
-        });
+//        });
 
 
    function updateClickCount (data) {
