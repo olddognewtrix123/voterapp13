@@ -3,18 +3,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var User = new Schema({
-	github: {
-		id: String,
-		displayName: String,
-		username: String,
-      publicRepos: Number
-	},
-   nbrClicks: {
-      clicks: Number
-   }
-});
-
 
 const OptionSchema = new Schema({
      optionName: String,
@@ -28,11 +16,11 @@ const OptionSchema = new Schema({
 
   const fccvotingapp = new Schema({
      userName: String,
-     surveys: [SurveySchema]
+     password: String
+    // surveys: [SurveySchema]
   });
 
 
 
-module.exports = mongoose.model('User', User);
 
 module.exports = mongoose.model('appUser', fccvotingapp);

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>the fcc voter app using a stripped down version of clementine.js as a template</title>
+		
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<header>
+		<!--<p>Welcome, <span id="display-name"></span>!</p>-->
+		<p>Welcome to the FCC Voting App!</p>
+		<a class="menu" href="/profile">Profile</a>
+		<p>|</p>
+		<a class="menu" href="/logout">Logout</a>
+	</header>
+
+	<body>
+		<div class="container">
+			<img src="/public/img/clementine_150.png" />
+			<br />
+			<p class="clementine-text">Clementine.js</p>
+		</div>
+	
+		<div class="container">
+			<p>You have clicked the button <span id="click-nbr"></span> times.</p>
+			<br />
+			<div class="btn-container">
+				<button type="submit" class="btn btn-add">CLICK ME!</button>
+				<button class="btn btn-delete">RESET</button>
+			</div>
+			<br />
+			<div class="btn-container"> <!-- this is just a clickable link for now, rather than a button with an even handler - will not be called from this page in the future-->
+				<a href="/newPoll">
+					<div class="btn" id="login-btn">
+						<p>New Poll</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="common/ajax-functions.js"></script>
+		<script type="text/javascript" src="controllers/clickController.client.js"></script>
+		<script type="text/javascript" src="controllers/userController.client.js"></script>
+	</body>
+
+</html>
