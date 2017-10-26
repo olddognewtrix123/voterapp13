@@ -1,5 +1,6 @@
 {
   "name": "clementinejs-fcc",
+  "entry point": "server.js",
   "version": "1.0.1",
   "description": "The elegant and lightweight boilerplate for full stack JavaScript.",
   "main": "server.js",

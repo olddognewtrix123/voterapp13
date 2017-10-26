@@ -42,6 +42,7 @@ console.log('hello');
  
  // deletes the last option on the newPolls page  (Delete Last Option button)     
    deleteOptButton.addEventListener('click', function(){
+       console.log('Well there you have it!');
       var x = document.getElementById("container").childElementCount;
             // Container <div> where dynamic content will be placed
             var container = document.getElementById("container");
@@ -53,7 +54,9 @@ console.log('hello');
         
 // saves new poll to the database (Finish and Create button)
 createPoll.addEventListener('click', function(){ 
-   const appUser = require("/models.appUser");
+    
+   const appUser = require("./models.appUser");
+   console.log('so far so good!');
             var newpoll = new appUser({
                userName: 'frank',
                password: '1234'

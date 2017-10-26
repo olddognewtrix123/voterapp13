@@ -35,6 +35,17 @@ function ClickHandler () {
 				}
 			);
 	};
+	
+	this.sendPollTodbClick = function (req, res) {
+		Users
+			.findOneAndUpdate({ 'github.id': req.user.github.id }, { 'nbrClicks.clicks': 0 })
+			.exec(function (err, result) {
+					if (err) { throw err; }
+
+					res.json(result.nbrClicks);
+				}
+			);
+	};
 
 }
 
