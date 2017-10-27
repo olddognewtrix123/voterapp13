@@ -66,4 +66,6 @@ module.exports = function (app) {
 		.get(clickHandler.getClicks)
 		.post(clickHandler.addClick)
 		.delete(clickHandler.resetClicks);
+	
+	app.route('/sendPollToDB').post(clickHandler.sendPollToDataBaseClick);
 };

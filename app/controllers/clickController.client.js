@@ -7,11 +7,12 @@
 
    var newOptButton = document.querySelector('.btn-addOpt');
    var deleteOptButton = document.querySelector('.btn-deleteOpt');
-   var createPoll = document.querySelector('.btn-createPoll');
+//   var createPoll = document.querySelector('.btn-createPoll');
    var addButton = document.querySelector('.btn-add');
    var deleteButton = document.querySelector('.btn-delete');
    var clickNbr = document.querySelector('#click-nbr');
-   var apiUrl = appUrl + '/api/:id/clicks';
+//   var apiUrl = appUrl + '/api/:id/clicks';
+ //  var gogogo = appUrl + '/sendPollToDB';
    
    //https://stackoverflow.com/questions/14853779/adding-input-elements-dynamically-to-form
    
@@ -54,18 +55,7 @@ console.log('hello');
         
 // saves new poll to the database (Finish and Create button)
 //createPoll.addEventListener('click', function(){ 
-    
- //  const appUser = require("./models.appUser");
- //  console.log('so far so good!');
-//            var newpoll = new appUser({
-//               userName: 'frank',
-//               password: '1234'
-//            });
-//            // Mongoose method to save to the db using the appUser schema
- //           newpoll.save(function (err) {
- // if (err) console.log("Got error saving to db");
-  // saved!
-//});
+//             gogogo;   // ***********************************************************
 //        });
 
 
@@ -77,22 +67,23 @@ console.log('hello');
 
 
 // this is code leftover from the original Clementine template. I am not really using it for the voter app.
-   ajaxFunctions.ready(ajaxFunctions.ajaxRequest('GET', apiUrl, updateClickCount));
+//   ajaxFunctions.ready(ajaxFunctions.ajaxRequest('GET', apiUrl, updateClickCount));
 
-   addButton.addEventListener('click', function () {
+//   addButton.addEventListener('click', function () {
 
-      ajaxFunctions.ajaxRequest('POST', apiUrl, function () {
-         ajaxFunctions.ajaxRequest('GET', apiUrl, updateClickCount);
-      });
+//      ajaxFunctions.ajaxRequest('POST', apiUrl, function () {
+//         ajaxFunctions.ajaxRequest('GET', apiUrl, updateClickCount);
+//      });
 
-   }, false);
+//   }, false);
 
-   deleteButton.addEventListener('click', function () {
+//   deleteButton.addEventListener('click', function () {
+      
 
-      ajaxFunctions.ajaxRequest('DELETE', apiUrl, function () {
-         ajaxFunctions.ajaxRequest('GET', apiUrl, updateClickCount);
-      });
+//      ajaxFunctions.ajaxRequest('DELETE', apiUrl, function () {
+//         ajaxFunctions.ajaxRequest('GET', apiUrl, updateClickCount);
+//      });
 
-   }, false);
+ //  }, false);
 
 })();

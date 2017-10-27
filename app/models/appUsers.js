@@ -16,8 +16,8 @@ const OptionSchema = new Schema({
 
   const fccvotingapp = new Schema({
      userName: String,
-     password: String
-    // surveys: [SurveySchema]
+     password: String,
+     surveys: [SurveySchema]
   });
 
 

@@ -1,6 +1,7 @@
 'use strict';
 
 var Users = require('../models/users.js');
+var appUsers = require('../models/appUsers.js');
 
 function ClickHandler () {
 
@@ -36,17 +37,17 @@ function ClickHandler () {
 			);
 	};
 	
-	this.sendPollTodbClick = function (req, res) {
-		Users
-			.findOneAndUpdate({ 'github.id': req.user.github.id }, { 'nbrClicks.clicks': 0 })
-			.exec(function (err, result) {
-					if (err) { throw err; }
-
-					res.json(result.nbrClicks);
+	this.sendPollToDataBaseClick = function (req, res) {
+			var newpoll = new appUsers({
+               userName: 'frank',
+               password: '1234',
+               surveys: []
+            });
+            // Mongoose method to save to the db using the appUser schema
+            newpoll.save()
 				}
-			);
 	};
 
-}
+
 
 module.exports = ClickHandler;
